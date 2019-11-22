@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setupToolbar();
         setupFeed();
         setupMenu();
+
     }
 
     protected void setupToolbar() {

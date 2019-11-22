@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_gravity="end"
+
+                android:src="@drawable/login_main_top"
+
+               />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="We One "
+                android:textColor="#110E0E"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:inputType="text"
+                android:layout_weight="0.2"
+                android:layout_width="280dp"
+                android:layout_height="0dp"
+                android:hint="아이디"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffffff"
+                android:id="@+id/idText"
+                android:layout_marginTop="40dp"
+             />
+
+
+            <EditText
+                android:singleLine="true"
+                android:layout_weight="0.2"
+                android:inputType="textPassword"
+                android:layout_width="280dp"
+                android:layout_height="0dp"
+                android:hint="비밀번호"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#ffffffff"
+                android:textColorHint="#ffffffff"
+                android:id="@+id/passwordText"
+                android:layout_marginTop="10dp"
+              />
+
+            <Button
+                android:layout_weight="0.2"
+                android:layout_width="280dp"
+                android:layout_height="0dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#0E0B0B"
+                android:shadowColor="#A82511"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="로그인"
+                android:id="@+id/loginButton"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center" />
+
+
+
+
+
+
+            <TextView
+                android:layout_weight="0.1"
+                android:id="@+id/sign_up_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="회원가입"
+                android:textColor="#0E0B0B"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_weight="0.1"
+                android:id="@+id/findIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#0E0B0B"
+                android:text="ID/PW 찾기"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -28,4 +28,5 @@ dependencies {
     implementation 'com.nineoldandroids:library:2.4.0'
     implementation 'com.mxn.soul:flowingdrawer-core:2.1.0'
 //    implementation project(':flowingdrawer-core')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

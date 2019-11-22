@@ -9,6 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextSwitcher;
+import android.widget.TextView;
 
 
 class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -35,7 +36,7 @@ class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
-        if (position % 2 == 0) {
+        if (position % 2 == 0) { //게시판 글올리는 부분
             holder.ivFeedCenter.setImageResource(R.drawable.img_feed_center_1);
             holder.ivFeedBottom.setImageResource(R.drawable.img_feed_bottom_1);
         } else {
@@ -66,6 +67,7 @@ class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     private static class CellFeedViewHolder extends RecyclerView.ViewHolder {
+        TextView  ivadmin;
         ImageView ivFeedCenter;
         ImageView ivFeedBottom;
         ImageButton btnComments;
@@ -77,14 +79,13 @@ class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         CellFeedViewHolder(View view) {
             super(view);
-
+            ivadmin = (TextView) view.findViewById(R.id.ivAdminText);
             ivFeedCenter = (ImageView) view.findViewById(R.id.ivFeedCenter);
             ivFeedBottom = (ImageView) view.findViewById(R.id.ivFeedBottom);
             btnComments = (ImageButton) view.findViewById(R.id.btnComments);
             btnLike = (ImageButton) view.findViewById(R.id.btnLike);
             btnMore = (ImageButton) view.findViewById(R.id.btnMore);
             tsLikesCounter = (TextSwitcher) view.findViewById(R.id.tsLikesCounter);
-            ivUserProfile = (ImageView) view.findViewById(R.id.ivUserProfile);
             vImageRoot = (FrameLayout) view.findViewById(R.id.vImageRoot);
         }
     }
