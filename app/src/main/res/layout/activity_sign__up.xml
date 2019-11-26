@@ -193,7 +193,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="회원가입"
+            android:text="확인"
             android:id="@+id/btn_join" />
 
         <Button
