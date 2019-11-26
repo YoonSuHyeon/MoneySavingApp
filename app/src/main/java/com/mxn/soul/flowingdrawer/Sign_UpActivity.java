@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Sign_UpActivity extends AppCompatActivity {
     private DatabaseReference database;
-    private EditText nickname,userid,password,password2;
-    private Button btn_nickname,btn_userid;
+    private EditText nickname,userid,password,password2,useremail,useremailcode;
+    private Button btn_nickname,btn_userid,btn_useremail,btn_useremailcode,btn_join,btn_cancel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,12 @@ public class Sign_UpActivity extends AppCompatActivity {
         btn_userid=findViewById(R.id.btn_userID);
         password=findViewById(R.id.et_Password);
         password2=findViewById(R.id.et_Password2);
+        useremail=findViewById(R.id.et_userEmail);
+        btn_useremail=findViewById(R.id.btn_userEmail);
+        useremailcode=findViewById(R.id.et_userMailcode);
+        btn_useremailcode=findViewById(R.id.btn_userEmailcode);
+        btn_cancel=findViewById(R.id.btn_cancel);
+        btn_join=findViewById(R.id.btn_join);
 
 
         btn_nickname.setOnClickListener(new View.OnClickListener() {//닉네임 중복 버튼을 눌렀을때
