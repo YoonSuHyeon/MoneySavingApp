@@ -31,6 +31,8 @@ public class HomeActivity extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String d ;
+
                 Intent signupintent = new Intent(HomeActivity.this,Sign_UpActivity.class);
                 startActivity(signupintent);
             }
