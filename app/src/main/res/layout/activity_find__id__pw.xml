@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Find_ID_PWActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ID / PW 찾기"
+            android:textSize="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="50dp"/>
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="아이디를 입력하세요"
+            android:textSize="50dp"
+            android:inputType="textEmailAddress"/>
+        <Button
+            android:id="@+id/bt_email"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:hint="전송"
+            android:textSize="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="인증번호"
+            android:textSize="50dp"/>
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="인증번호를 입력하세요"
+            android:textSize="50dp"
+            android:inputType="textEmailAddress"/>
+        <Button
+            android:id="@+id/bt_code"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:hint="확인"
+            android:textSize="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="100dp">
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:text="확인"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
