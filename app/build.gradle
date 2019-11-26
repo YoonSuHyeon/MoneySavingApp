@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 26
 
     defaultConfig {
         applicationId "com.mxn.soul.flowingdrawer"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 26
         versionCode 120
         versionName "1.2.0"
@@ -29,4 +30,5 @@ dependencies {
     implementation 'com.mxn.soul:flowingdrawer-core:2.1.0'
 //    implementation project(':flowingdrawer-core')
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
 }
