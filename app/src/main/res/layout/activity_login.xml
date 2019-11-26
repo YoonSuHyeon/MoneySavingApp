@@ -4,32 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".LoginActivity"
     android:orientation="vertical"
     android:weightSum="1"
     >
 
 
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:textSize="50dp"/>
+    </LinearLayout>
 
     <LinearLayout
         android:weightSum="1"
 
-        android:layout_weight="0.25"
+        android:layout_weight="0.1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal">
 
 
-        <TextView
-            android:layout_weight="0.5"
-            android:gravity="center"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:text="아이디"
-            android:textSize="20dp"/>
 
         <EditText
-            android:layout_weight="0.5"
+            android:drawableStart="@drawable/id_image"
+            android:drawableLeft="@drawable/id_image"
+            android:layout_weight="1"
             android:id="@+id/et_id"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -56,23 +65,17 @@
 
         <LinearLayout
             android:weightSum="1"
-            android:layout_weight="0.25"
+            android:layout_weight="0.1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:orientation="horizontal">
 
 
 
-            <TextView
-                android:layout_weight="0.5"
-                android:gravity="center"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:text="비밀번호"
-                android:textSize="20dp"/>
-
             <EditText
-                android:layout_weight="0.5"
+                android:drawableStart="@drawable/password"
+                android:drawableLeft="@drawable/password"
+                android:layout_weight="1"
                 android:id="@+id/et_password"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -86,7 +89,7 @@
 
         <LinearLayout
 
-            android:layout_weight="0.25"
+            android:layout_weight="0.2"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -114,7 +117,7 @@
             >
 
             <TextView
-                android:layout_weight="1"
+                android:layout_weight="0.25"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
