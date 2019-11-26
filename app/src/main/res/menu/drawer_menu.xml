@@ -3,19 +3,19 @@
         <item
             android:id="@+id/menu_feed"
             android:icon="@drawable/ic_global_menu_feed"
-            android:title="My Feed" />
+            android:title="공지사항" />
         <item
             android:id="@+id/menu_direct"
             android:icon="@drawable/ic_global_menu_direct"
-            android:title="Instagram Direct" />
+            android:title="친구목록" />
         <item
             android:id="@+id/menu_news"
             android:icon="@drawable/ic_global_menu_news"
-            android:title="News" />
+            android:title="내 채팅방" />
         <item
             android:id="@+id/menu_popular"
             android:icon="@drawable/ic_global_menu_popular"
-            android:title="Popular" />
+            android:title="전체 채팅방" />
         <item
             android:id="@+id/menu_photos_nearby"
             android:icon="@drawable/ic_global_menu_nearby"

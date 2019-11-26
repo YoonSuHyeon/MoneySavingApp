@@ -37,17 +37,16 @@ class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private void bindDefaultFeedItem(int position, CellFeedViewHolder holder) {
         if (position % 2 == 0) { //게시판 글올리는 부분
-            holder.ivFeedCenter.setImageResource(R.drawable.img_feed_center_1);
-            holder.ivFeedBottom.setImageResource(R.drawable.img_feed_bottom_1);
+            holder.ivFeedCenter.setText("바보");
+
         } else {
-            holder.ivFeedCenter.setImageResource(R.drawable.img_feed_center_2);
-            holder.ivFeedBottom.setImageResource(R.drawable.img_feed_bottom_2);
+            holder.ivFeedCenter.setText("멍청이");
+
         }
 
-        holder.btnComments.setTag(position);
-        holder.btnMore.setTag(position);
+
         holder.ivFeedCenter.setTag(holder);
-        holder.btnLike.setTag(holder);
+
 
     }
 
@@ -68,24 +67,16 @@ class FeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static class CellFeedViewHolder extends RecyclerView.ViewHolder {
         TextView  ivadmin;
-        ImageView ivFeedCenter;
-        ImageView ivFeedBottom;
-        ImageButton btnComments;
-        ImageButton btnLike;
-        ImageButton btnMore;
-        TextSwitcher tsLikesCounter;
-        ImageView ivUserProfile;
+        TextView ivFeedCenter;
+
+
         FrameLayout vImageRoot;
 
         CellFeedViewHolder(View view) {
             super(view);
             ivadmin = (TextView) view.findViewById(R.id.ivAdminText);
-            ivFeedCenter = (ImageView) view.findViewById(R.id.ivFeedCenter);
-            ivFeedBottom = (ImageView) view.findViewById(R.id.ivFeedBottom);
-            btnComments = (ImageButton) view.findViewById(R.id.btnComments);
-            btnLike = (ImageButton) view.findViewById(R.id.btnLike);
-            btnMore = (ImageButton) view.findViewById(R.id.btnMore);
-            tsLikesCounter = (TextSwitcher) view.findViewById(R.id.tsLikesCounter);
+            ivFeedCenter = (TextView) view.findViewById(R.id.ivFeedCenter);
+
             vImageRoot = (FrameLayout) view.findViewById(R.id.vImageRoot);
         }
     }
