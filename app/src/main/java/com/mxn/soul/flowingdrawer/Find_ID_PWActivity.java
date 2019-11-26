@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Find_ID_PWActivity extends AppCompatActivity {
-    Button email,code;
+    Button email,code; //이메일
     EditText etemail,etcode;
     GMailSender gMailSender;
     private DatabaseReference database;
