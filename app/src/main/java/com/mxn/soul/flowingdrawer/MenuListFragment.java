@@ -35,6 +35,7 @@ public class MenuListFragment extends Fragment {
                 false);
         ivMenuUserProfilePhoto = (ImageView) view.findViewById(R.id.ivMenuUserProfilePhoto);
         NavigationView vNavigation = (NavigationView) view.findViewById(R.id.vNavigation);
+
         vNavigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
