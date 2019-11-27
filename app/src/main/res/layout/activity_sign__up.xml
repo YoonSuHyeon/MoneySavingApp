@@ -7,7 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".Sign_UpActivity"
     android:weightSum="10"
-    android:padding="50dp">
+    android:padding="50dp"
+    android:background="@drawable/background"
+    >
     <TextView
         android:id="@+id/textViewAutoLink"
         android:layout_width="match_parent"
@@ -15,9 +17,9 @@
         android:layout_marginTop="4dp"
         android:gravity="center_horizontal"
         android:text="회원가입"
-        android:textSize="20sp"
+        android:textSize="40sp"
         android:color="@color/paint_color"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="@font/font1"
         android:textColor="@android:color/black" />
 
     <LinearLayout
@@ -38,11 +40,16 @@
             android:ems="10"
             android:hint=" NickName"
             android:id="@+id/et_nickname"
-            android:drawableStart="@drawable/ic_people_black_24dp"
-            android:drawableLeft="@drawable/ic_people_black_24dp"
+            android:drawableStart="@drawable/id_image"
+            android:drawableLeft="@drawable/id_image"
             android:layout_marginRight="10dp"
             />
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -68,10 +75,14 @@
             android:ems="10"
             android:hint=" ID"
             android:id="@+id/et_userID"
-            android:drawableStart="@drawable/ic_people_black_24dp"
-            android:drawableLeft="@drawable/ic_people_black_24dp" />
+            android:drawableStart="@drawable/id_image"
+            android:drawableLeft="@drawable/id_image"/>
 
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
 
             android:id="@+id/btn_userID"
             android:layout_width="0dp"
@@ -144,6 +155,11 @@
             android:id="@+id/et_userEmail" />
         <Button
 
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -168,10 +184,15 @@
             android:inputType="textEmailAddress"
             android:ems="10"
             android:hint=" 인증번호"
-            android:drawableStart="@drawable/ic_email_black_24dp"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableStart="@drawable/security_key"
+            android:drawableLeft="@drawable/security_key"
             android:id="@+id/et_userMailcode" />
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -189,6 +210,11 @@
         android:paddingRight="20dp"
         android:padding="20dp">
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -197,6 +223,11 @@
             android:id="@+id/btn_join" />
 
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

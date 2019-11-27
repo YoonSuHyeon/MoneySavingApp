@@ -7,6 +7,7 @@
     tools:context=".Find_ID_PWActivity"
     android:orientation="vertical"
     android:weightSum="1"
+    android:background="@drawable/background"
     >
 
     <LinearLayout
@@ -16,12 +17,15 @@
         android:layout_height="0dp"
         android:orientation="vertical">
         <TextView
+            android:color="@color/paint_color"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/font1"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="ID / PW 찾기"
             android:textStyle="bold"
-            android:textSize="50dp"/>
+            android:textSize="40sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,6 +47,11 @@
             android:textSize="20dp"
             android:inputType="textEmailAddress"/>
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             android:layout_weight="0.2"
             android:id="@+id/bt_email"
             android:layout_width="0dp"
@@ -71,6 +80,11 @@
 
             android:inputType="textEmailAddress"/>
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             android:layout_weight="0.2"
             android:id="@+id/bt_code"
             android:layout_width="0dp"
@@ -88,6 +102,11 @@
         android:layout_height="0dp"
         android:orientation="horizontal">
         <Button
+            android:shadowColor="#D5CFCF"
+            android:background="@drawable/buttoncolor"
+            android:shadowDx="0"
+            android:shadowDy="0"
+
             android:id="@+id/bt_complete"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
