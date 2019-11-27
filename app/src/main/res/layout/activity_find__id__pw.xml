@@ -42,6 +42,7 @@
 
 
         <EditText
+            android:gravity="center"
             android:drawableStart="@drawable/email_image"
             android:drawableLeft="@drawable/email_image"
             android:layout_weight="0.8"
@@ -70,6 +71,7 @@
         android:layout_height="0dp"
         android:orientation="horizontal">
         <EditText
+            android:gravity="center"
             android:drawableStart="@drawable/security_key"
             android:drawableLeft="@drawable/security_key"
             android:layout_weight="0.8"
@@ -108,5 +110,4 @@
             android:textSize="20dp"
             android:textStyle="bold"/>
     </LinearLayout>
-
 </LinearLayout>

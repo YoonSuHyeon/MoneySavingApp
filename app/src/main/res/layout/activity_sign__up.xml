@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
             android:text="확인"
+            android:textStyle="bold"
             android:id="@+id/btn_nickname" />
     </LinearLayout>
     <LinearLayout
@@ -82,6 +83,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
+            android:textStyle="bold"
             android:text="확인" />
     </LinearLayout>
     <LinearLayout
@@ -155,6 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
             android:text="전송"
+            android:textStyle="bold"
             android:id="@+id/btn_userEmail" />
     </LinearLayout>
     <LinearLayout
@@ -185,6 +188,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.2"
             android:text="확인"
+            android:textStyle="bold"
             android:id="@+id/btn_userEmailcode" />
     </LinearLayout>
     <LinearLayout
@@ -204,6 +208,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="확인"
+            android:textStyle="bold"
             android:id="@+id/btn_join" />
 
         <Button
@@ -214,6 +219,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="취소"
+            android:textStyle="bold"
             android:id="@+id/btn_cancel" />
     </LinearLayout>
 </LinearLayout>
