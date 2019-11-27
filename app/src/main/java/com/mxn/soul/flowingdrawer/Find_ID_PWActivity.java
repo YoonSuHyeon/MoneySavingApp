@@ -1,4 +1,5 @@
 package com.mxn.soul.flowingdrawer;
+import android.content.Intent;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Find_ID_PWActivity extends AppCompatActivity {
-    Button email,code; //이메일
+    Button email,code,btcomplete; //이메일
     EditText etemail,etcode;
     GMailSender gMailSender;
     private DatabaseReference database;
@@ -40,7 +41,7 @@ public class Find_ID_PWActivity extends AppCompatActivity {
         code =findViewById(R.id.bt_code);
         etemail=findViewById(R.id.et_email);
         etcode =findViewById(R.id.et_code);
-
+        btcomplete=findViewById(R.id.bt_complete);
         email.setOnClickListener(new View.OnClickListener() { // 이메일로 아이디를 찾기위한 버튼클릭시 하는일
             @Override
             public void onClick(View v) {
@@ -107,7 +108,7 @@ public class Find_ID_PWActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(gMailSender.getEmailCode().equals(etcode.getText().toString())){ //이메일로보낸 인증코드와 입력한 인증코드가 같다면 아이디와 비밀번호를 보내준다.
                     try{
-                        gMailSender.sendMail("사용자의 회원정보","사용자 iD="+dbid+"사용자 Password="+dbpassword,etcode.getText().toString());
+                        gMailSender.sendMail("사용자의 회원정보","사용자 iD="+dbid+"사용자 Password="+dbpassword,etemail.getText().toString());
                         Toast.makeText(Find_ID_PWActivity.this, "이메일로 아이디와 비밀번호가 전송되었습니다.", Toast.LENGTH_SHORT).show();
 
                     }catch(SendFailedException e){
@@ -123,6 +124,14 @@ public class Find_ID_PWActivity extends AppCompatActivity {
                 else{
                     Toast.makeText(Find_ID_PWActivity.this, "인증번호가 틀렸습니다.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btcomplete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent completeintent = new Intent(Find_ID_PWActivity.this,LoginActivity.class);
+                startActivity(completeintent);
             }
         });
     }
