@@ -20,7 +20,7 @@
         android:textSize="40sp"
         android:color="@color/paint_color"
         android:fontFamily="@font/font1"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/white" />
 
     <LinearLayout
         android:weightSum="1"
@@ -45,10 +45,7 @@
             android:layout_marginRight="10dp"
             />
         <Button
-            android:shadowColor="#D5CFCF"
-            android:background="@drawable/buttoncolor"
-            android:shadowDx="0"
-            android:shadowDy="0"
+
 
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
@@ -79,10 +76,7 @@
             android:drawableLeft="@drawable/id_image"/>
 
         <Button
-            android:shadowColor="#D5CFCF"
-            android:background="@drawable/buttoncolor"
-            android:shadowDx="0"
-            android:shadowDy="0"
+
 
             android:id="@+id/btn_userID"
             android:layout_width="0dp"
@@ -155,10 +149,6 @@
             android:id="@+id/et_userEmail" />
         <Button
 
-            android:shadowColor="#D5CFCF"
-            android:background="@drawable/buttoncolor"
-            android:shadowDx="0"
-            android:shadowDy="0"
 
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
@@ -188,10 +178,7 @@
             android:drawableLeft="@drawable/security_key"
             android:id="@+id/et_userMailcode" />
         <Button
-            android:shadowColor="#D5CFCF"
-            android:background="@drawable/buttoncolor"
-            android:shadowDx="0"
-            android:shadowDy="0"
+
 
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
@@ -210,10 +197,7 @@
         android:paddingRight="20dp"
         android:padding="20dp">
         <Button
-            android:shadowColor="#D5CFCF"
-            android:background="@drawable/buttoncolor"
-            android:shadowDx="0"
-            android:shadowDy="0"
+
 
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"
@@ -223,10 +207,7 @@
             android:id="@+id/btn_join" />
 
         <Button
-            android:shadowColor="#D5CFCF"
-            android:background="@drawable/buttoncolor"
-            android:shadowDx="0"
-            android:shadowDy="0"
+
 
             style="?android:attr/buttonStyleSmall"
             android:layout_width="0dp"

@@ -19,13 +19,12 @@
         <TextView
 
             android:color="@color/paint_color"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:fontFamily="@font/font1"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="로그인"
-            android:textStyle="bold"
             android:textSize="40sp"/>
     </LinearLayout>
 
@@ -109,10 +108,6 @@
                 android:text="확인"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:shadowColor="#D5CFCF"
-                android:background="@drawable/buttoncolor"
-                android:shadowDx="0"
-                android:shadowDy="0"
 
 
                 />
